@@ -1,0 +1,246 @@
+
+    SPAN.S02{
+        color:orange;
+    }
+
+
+    html{
+        
+      
+        background-color: black;
+        display: block;
+        background-attachment:scroll;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.9;
+        filter:contrast(100%);
+        
+        filter: hue-rotate(230%);
+        filter: drop-shadow(500px);
+        border: 3px solid gold;
+       
+        margin-bottom: 20px;
+        margin-top: 0;
+       
+        
+    }
+    
+    
+    h1{
+        color:black;
+        text-align: center;
+        text-shadow: 900px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: oblique;
+    }
+    
+    .s1{
+        color: red;
+    }
+    
+    
+        
+    div.BMI{
+        
+        padding-left: 80px;
+        padding-right: 40px;
+        margin-left: 60px;
+        margin-top: 150px;
+        filter: brightness(100%);
+        background: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        border: 3px solid  whitesmoke;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 70%;
+        height: 50%;
+        display: inline-block;
+        padding: 10px;
+        font-size: 18px;
+        color: #333;
+        border: 4px solid transparent;
+        transition: border 0.5s ease; 
+        animation: border-pulse 2s ease-in-out infinite;
+        
+    }
+    div.BMI:hover{
+         border: 4px solid orange;
+         background-image: url("{%static 'images/gym6.jpeg'%}");
+         border-image: linear-gradient(to right, #f00, #0f0, #00f);
+         border-image-slice: 1;
+         animation: none;
+    }
+    @keyframes border-pulse {
+        0% {
+           border-color:wheat;
+        }
+        50% {
+           border-color: gold;
+        }
+        100% {
+           border-color: orangered;
+        }
+     }
+    input{
+        border-radius: 10px;
+        border: 3px solid whitesmoke;
+        font-size: 19px;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    input:hover{
+        border: 3px solid orange;
+        border-radius: 10px;
+    }
+    label{
+        color: black;
+        text-shadow: 3px;
+        padding-left: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    :placeholder-shown{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    div.header{
+        background-image: url("{%static 'images/gym.webp'%}");
+        float: left;
+        margin-top:0 ;
+        background-size: cover;
+        opacity: 0.9;
+        background-repeat: no-repeat;
+       
+        width: 100%;
+      
+        font-size: 40px;
+       
+              
+       
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:bolder ;
+        
+    }
+    
+    div.navbar {
+        
+        color: white;
+        
+        display: list-item;
+        height: 60%;
+        float: right;
+        
+        margin-bottom: 20px;
+        
+        
+            }
+            
+    li{
+        text-decoration: none;
+        list-style-type: none;
+        margin-right: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        
+    }
+    a{
+        color: yellow;
+        border-radius: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        width: 70%;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    a:hover{
+        background-color: red;
+        color: whitesmoke;
+        
+    }
+    
+    div.Blank{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 50%;
+        padding-bottom: 20px;
+    }
+    .k1{
+        color:orangered;
+        float: left;
+    }
+    span.gym{
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    image{
+        float: left;
+        width: 10%;
+        height:20%;
+        padding-left: 20px;
+
+    }
+    html::before{
+        opacity: 0.35;
+    }
+    #EMAIL{
+        color: orange;
+    }
+   DIV.header img{
+    float: left;
+    padding-left: 0px;
+    padding-top: 0;
+   }
+   span.NATION{
+    color: red;
+    float: left;
+   }
+   div.logo{
+    display: inline-block;
+   }
+   div.need h3{
+    color: black;
+    float: left;
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 70px;
+    SPAN.K2{
+    color: red;
+
+   }
+   span.k3{
+    padding-left: 50px;
+   }
+    
+   }
+   img{
+    border-radius:50%;
+   }
+   div.dropdown{
+    background-color: black;
+    width:53% ;
+    float: inline-end;
+    height: 40px;
+    
+    text-align: center;
+    padding: 10px;
+   }
+   div.dropdown li{
+    display: inline-flex;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   div.caption{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: list-item;
+    font-style: oblique;
+   }
+   
+   

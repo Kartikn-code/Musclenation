@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-color:beige;
+                border-top: 30px solid aqua;
+            }
+            div.qrcode{
+                padding-left: 530px;
+                padding-top: 100px;
+            }
+            div.words{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-size: 25px;
+               
+            }
+            input{
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="qrcode">
+            <img src="qr code.png" width="250px" height="250px">
+
+        </div>
+        <div class="words">
+            Scan the Above QR-CODE To Re-direct to Your Final order Summary Page!!<br><br>
+            <input type="button" value="continue" onclick="alertorder()">
+        </div>
+        <script>
+            function alertorder(){
+                alert("Your Order Has been Successfully Placed!!");
+            }
+        </script>
+    </body>
+</html>

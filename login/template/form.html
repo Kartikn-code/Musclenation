@@ -1,0 +1,23 @@
+
+
+<div><form action=" {% url 'find_customer' %}" method="get">
+
+    <input type="text"name="cname">
+    <input type="submit" value="search">
+</form></div>
+<div>
+    <ul>
+    {%  for cust in custname %}
+    <li>    {{cust.CName}}</li>
+    <li>    {{cust.CmailId}}</li>
+        {% endfor %}
+    </ul>
+</div>
+<form action=" {% url 'form_user' %}" method="post">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit">Submit</button>
+</form>
+{% for msg in messages %}
+    {{msg}}
+{% endfor %}

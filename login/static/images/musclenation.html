@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html{
+            background-color: black;
+            margin-top: 0;
+            
+            
+           
+           
+        }
+        img{
+          border-radius: 50%;
+        }
+        img:hover{
+           background-color: none;
+        }
+        
+        div.main{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            padding-left: 100px;
+            
+        }
+        #k1{
+            color: orangered;
+            font-size: 50px;
+        }
+        span#k2 img{
+                border-radius: 50px;
+                width: 175px;
+                height: 175px;
+                
+        }
+        li{
+            list-style-type: none;
+        }
+        
+        div.blank li{
+            display: block;
+            float: left;
+            list-style-type: none;
+        }
+        div.navbar li{
+            list-style-type: none;
+           margin-left: 20px;
+            display: inline-flex;
+            
+            color: white;
+        
+        }
+        div.header{
+            display: flex;
+            padding-left: 100px;
+            
+        }
+        div.navbar{
+            margin-top: 30px;
+            margin-left: 140px;
+            height: fit-content;
+            text-align: center;
+            border-radius: 30px;
+            
+            
+        }
+        img:hover{
+            background-color: none;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+          
+        }
+        a:hover{
+            color: white;
+            background-color: orangered;
+        }
+        div.Blank{
+            font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        color: white;
+        width: 90%;
+        height: 50%;
+        padding-bottom: 20px;
+        border: 2px solid white;
+       margin-bottom: 30px;
+        margin-left: 55px;
+        background-image: url(gym15.jpg);
+       
+        background-size: contain;
+    }
+    #EMAIL{
+        color: orange;}
+        div.suggestions{
+            display: flex;
+        }
+        span.socialmedia{
+            margin-left: 20px;
+        }
+        div.address{
+            text-align: center;
+            display: flexbox;
+            
+        }
+        
+        
+        div.toppage{
+           
+            opacity: 0.9;
+            filter: contrast(200%);
+            filter: sepia(2%);
+            background-image: url(GYM12.jpg);
+            background-repeat: no-repeat;
+           background-attachment: scroll;
+            background-size: contain;
+            border: 5px solid orangered;
+           padding-top: 0;
+           
+           border-radius: 40px;
+        }
+        div.logos{
+            display: inline-flex;
+            margin-left: 250px;
+            margin-top: 30px;
+            margin-right: 30px;
+           
+        }
+        span.socialmedia{
+            display: inline-flex;
+        }
+         img title{
+            color: beige;
+            border-radius: 20px;
+            border: 3px solid beige;
+        }
+        div.main1{
+            padding-top: 100px;
+        }
+        
+       
+
+    </style>
+    <script>
+        function Profile(){
+            confirm("Do you Need To Visit Your Profile");
+        }
+        function logout(){
+            confirm("You Will Lose Your Data")
+        }
+        $(function() {
+    $("#links > a").click(function(e) {
+        e.preventDefault(); //so the browser doesn't follow the link
+
+        $("#content").load(this.href, function() {
+            //execute here after load completed
+        });
+    });
+});
+    </script>
+    <head>
+        <div class="toppage">
+        <div class="header">
+        <span id="k2"><IMG src="muscle nation.jpg" width="100px" height="100px"></span>
+       
+    <div class="navbar">
+            <ul>
+                <li><a>HOME</a></li>
+                <li><a href="PRODUCTS.HTML" >PRODUCTS</a></li>
+                <li><a>CONTACT US</a></li>           
+            </ul>
+        
+    </div>
+    <div class="logos">
+            Prime
+        <img title="Prime" src="prime.jpg" width="50px" height="50px">
+       <img title="Profile" src="profile.png" width="50px" height="50px" onclick="Profile()">
+        <img title="Logout" src="logout.png" width="50px" height="50px" onclick="logout()">
+    </div>
+    </div>
+    </head>
+    <body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="main">
+    <div class="main1">
+       <SPAN id="k1">|</SPAN> <SPAN style="color: white; font-size: 30px;">STAY <span id="k1">FIT</span> AND <span id="k1">FOCUSED </span><br>WITH US <span id="k1">TOGETHER <span id="k1">|</span></span></SPAN>
+    
+        <div id="links">
+            <span style="color: white;background-color: orangered;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;padding: 10px;border: 2px solid whitesmoke;margin-left: 100px;"> <a href="loginpage.html">Get Started </a></span>
+        </div>
+    </div>
+        <div id="content"></div>
+        
+              <br>  </span><br>
+            </div><br><br>
+           
+
+
+
+<div class="Blank">
+    <br><br><br>
+    
+<div class="address">
+    COPYRIGHTS RECEIVED-<br><img src="at.png" width="30px" height="30px"><br>2017
+   <br>#22, COOPERATIVE NAGAR,CHENNAI-600077
+<BR>
+        <SPAN id="EMAIL">EMAIL:-</SPAN><a href="mailid">GETfit-with-Musclenation@gmail.com </a><br>
+        <BR><br>FOLLOW US ON <BR>
+            
+            <img src="insta.jpg" width="80px" height="80px"><img src="twitter.jpg" width="70px" height="70px"><br><br>
+               <span class="socialmedia"> <span id="EMAIL">INSTA:-</span> <a href="insta"><li>GETfit-withmusclenation</li></a> <span id="EMAIL">TWITTER:-</span><a href="twitter"><li>MOVE-withmusclenation</li></a> </span>
+            
+</div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+django -
+> app
+
+u want to deploy : server(os+ storage space+ it supporst django) this will 
+ip(dns: 117.220.255.255)-> google.com , musclenation.com -> web app server-> you will plac django folder
+settings and config-> before the localpathj c:/apache/djangoapp -> linux / unix
+
+
+
+www/public/ apache/ htddocs/etc
+aws/gcp/azure
+i recommoned aws  lambda : create your function call ur app 50-60 request is free
+small charges $0.45 usd
+
+Hikaru(remote server)
+
+if you want to test locally on your presonal pc
+apache lounge:
+	->
+cd apache/bin ->
+bin -> httpd start
+-> will error it ill start
+httpd stop
+
+

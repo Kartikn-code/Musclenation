@@ -1,0 +1,64 @@
+Djangoproject createion
+
+thern we created an app
+
+login and register (createion data - authentication)
+
+admin
+
+
+
+DJango -Framework (Project/ Product)
+	gym appplication -> many modules[10] (1 mechanism)	
+	login app (login,reg,logout)
+	product app (add,view, update,delete)
+	category app
+	
+
+
+
+model view template how to create app in django project
+
+>model (we create a class object) for exmaple
+Customer class: Object [customer] ->  python manage.py makemigrtions ->
+0001.stash()-> object encrypted (and also contains mapping)-> settings file -> database:
+	python manage.py migrate (create a table / schema in the corresponding db)
+
+process -> ORM ( object relational mapping)
+
+admin.site.register- it gives feasibility to do certain operations without implementation of business logic (view)
+	and template( UI rendering) load model directly in it
+
+model -< interacts with database ( which it has database logic)
+view -< it carries business logic takes input as request and proces from the request by interacting between
+the model and view 
+process req to model and model interacts with db fetchs information passed as processed data to view and share this as
+a response to the template
+
+ Design PAttern: MVT (JAVA, PHP - MVC)
+Factory, obserable, MVT/MVC, creational Design patterm
+
+core -app: (for everyapp u have to develop from scratch)
+
+
+CRUD ->  C / -> C R U D (products)
+how to write django query
+and how to use to concatenate 2 diff tables without join
+
+mysqldb (select, insert, update, aleter, delete ) dml/ddl (data manipulation language) / data definition language
+primiary key, foreign key, unique key, indexing, clustering, non clustering, view , temp table, cursor,
+trigger , procedure
+
+joins all intersecion anduninn self join subquery, complex query
+
+
+
+
+
+
+
+
+
+
+
+    

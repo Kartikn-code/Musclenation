@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30px; color: orangered;">
+    Hello gym bross!!
+</head>
+<body style="color: aqua;background-color: beige;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 40px;padding: 30px;">
+    <span style="color: red;">  Plan your Diet-plan along with us!!.</span><br>{{data}}
+    {% for d in dbdata %}
+    <br>name: {{d.name}}
+    age:{{d.age}}
+    {% endfor %}
+</body>
+</html>

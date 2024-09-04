@@ -1,0 +1,193 @@
+ html{
+           background-image: url("{% static 'images/bull4.jpeg'%}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        
+        
+        
+        div.Call{
+            color: white;
+            background-color: black;
+            text-align: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-right: 20px;
+        }
+        a{
+            color: black;
+            font-style: oblique;
+            font-size: 15px;
+            
+            padding-bottom: 0;
+            text-decoration: none;
+        }
+        a:hover{
+           
+            color: black;
+            
+        }
+        li{
+            display: inline-block;
+            list-style-type: none;
+        }
+        
+        
+        H1 .k2{
+            color:red ;
+            font-style: oblique;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div.header{
+        
+       background-image: url"{% static 'images/bull5.avif'%}";
+       
+        background-color: orange;
+        opacity: 0.9;
+        
+       
+      
+    
+        margin-top: 0;
+        padding: 20px;
+       border: 3px solid black;
+        width: 100%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:bolder ;
+        text-align: center;
+        font-style: oblique;
+    }
+    span.k2{
+        color: red;
+    }
+    div.header:hover{
+        border: 3px solid orange;
+    }
+    .k1{
+        color:whitesmoke;}
+    img{
+        border-radius: 20px;
+    }
+    img:hover{
+            border: 3px solid aqua;
+            border-radius: 20px;
+            box-shadow: 30px;
+    }
+    div.container{
+        display: flex;
+        align-items:center;
+        justify-content:left;
+        background-color:beige;
+        padding: 20px;
+        border-radius: 15px;
+        border: 2px solid orangered;
+       
+        
+        
+        
+        
+    }
+    
+    
+        .text{
+            font-size: 20px;
+            padding-left: 50px;
+            color:black;
+           
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        span.quan{
+           
+            color:lime;
+            font-size: 17px;
+        }
+        #title{
+            color:black;
+            padding-left: 50px;
+            font-style: oblique;
+        }
+        i{
+            padding-left: 80px;
+        }
+        span.quan1{
+            padding-left: 90px;
+            color:brown;
+        }
+        span.buynow{
+            background: transparent;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 350px;
+            border-radius: 20px;
+            size: 50px;
+            }
+            input{
+                border-radius: 20px;
+                size: 30px;
+               
+                
+            }
+            SPAN.rupees{
+                font-size: 40px;
+            }
+            div.offer1{
+                color: black;
+                border: 3px solid grey;
+                border-radius: 15px;
+                width: 25%;
+                padding: 10px;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+            #link{
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+            }
+            div.offers{
+                display: flex;
+                align-items: center;
+                margin-right: 200px;
+            }
+            #title1{
+                padding-left: 70px;
+                color: yellow;
+            }
+            LABEL{
+                padding-left: 30px;
+            }
+            FORM{
+                padding-left: 30px;
+            
+            }
+            span.offertitle{
+                font-size: 18px;
+                padding-left: 30px;
+            }
+            mark{
+                color: black;
+            }
+            span.pic-exclusive {
+                padding-left: 700px;
+                border-radius: 50%;
+                
+            }
+            img.popup:hover{
+                width: 330px;
+                height: 330px;
+            }
+            ul.list{
+                color: orangered;
+              list-style-type: disc;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            img.popup2:hover{
+                width: 220px;
+                height: 220px;
+            }
+              
+           
+                
+
+            

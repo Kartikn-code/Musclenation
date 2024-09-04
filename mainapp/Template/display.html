@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<style>
+    table,td,th{
+        border:1px solid orangered ;
+
+
+    }
+    
+</style>
+<head style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30px; color: orangered;">
+    Hello gym bross!!
+</head>
+<body style="color: aqua;background-color: beige;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 40px;padding: 30px;">
+    <span style="color: red;">  Plan your Diet-plan along with us!!.</span><br>{{data}}
+    {% for d in dbdata %}
+    <br>name: {{d.name}}
+    age:{{d.age}}
+    {% endfor %}
+    <div class="table1">
+        <table>
+            <tr>
+            <th>Customer-Name</th>
+            <th>Customer password</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {% for data in data %}    
+        <tr>
+                <td>{{data.name}}</td>
+                <td>{{data.age}}</td>
+                <td><a href="{% url 'display' data.id %} ">Edit</a></td>
+                <td><a href="{% url 'display' data.id %'}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

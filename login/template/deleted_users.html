@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <style>
+        html{
+            background-color: black;
+            color:blue;
+            padding: 30px;
+            margin: 100px;
+        }
+    </style>
+    <body>
+        <h3>confirm to delete user {{ data.username}}</h3>
+        <form method="post">
+        {% csrf_token %}
+        <button type="submit">okay</button>
+
+
+        </form>
+    </body>
+</head>

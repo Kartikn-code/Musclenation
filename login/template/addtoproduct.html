@@ -1,0 +1,164 @@
+{% load static %}
+<!doctype html>
+<style>
+html{
+    
+   background-color: black;
+    background-size: cover;
+    border: 4px solid orangered;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 0 10 10 orangered;
+    background-attachment: fixed;
+}
+select.product-wish{
+    border-radius: 20px ;
+    box-shadow: 10 10 10 solid gold;
+    border: 3px solid gold;
+    font-size: 20px;
+    
+   }
+   
+div.product-selection{
+    background-image: url("{%static 'images/gym13.jpg'%}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px ;
+    border: 5px solid yellowgreen;
+    box-shadow: 10 10 10 10 solid silver;
+    color: gold;
+    font-variant: small-caps;
+    width: 700px;
+    height: 340px;
+    padding: 40px;
+    margin: 200px;
+    font-size: 20px;
+        
+       
+}
+div.product-selection:hover{
+    border: 3px solid orangered;
+    z-index: -10;
+}
+div.title{
+    color:yellowgreen;
+    font-variant: small-caps;
+    padding: 20px;
+    font-size: 50px;
+   
+}
+div.product-selection label{
+    padding: 70px;
+}
+option{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color: gold;
+}
+option:hover{
+    border: 10px solid greenyellow;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 3px solid orangered;
+}
+img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;  
+}
+input{
+    border-radius: 20px;
+    padding-left: 30px;
+}
+div.navbar img{
+border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-direction: row;
+  float: right;
+  margin-top: 0;
+  margin-left: 10px;
+
+}
+div.header{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+div.title1{
+    float: right;
+    padding-left: 400px;
+    font-style: oblique;
+    font-weight: 800;
+    color: rgb(141, 48, 48);
+    -webkit-text-stroke: 1px gold;
+    
+}
+:placeholder-shown{
+    padding: 7px;
+}
+select.quantity{
+    margin-left: 40px;
+}
+</style>
+<head>
+    <div class="header">
+    <div class="title">
+    <img src="{% static 'images/muscle nation.jpg' width='40px',height='40px' %} "> 
+    
+</div>
+<div class="navbar">
+    <img src="{% static 'images/three bars.png'%} ">
+    <img src="{%static 'images/logout.png'%}">
+    <img src="{%static 'images/prime.jpg'%}">
+</div>
+</div>
+</head>
+<body>
+    <div class="product-selection">
+       <form action="">
+           
+           <br><br>
+           <select class="product-wish">
+           <option value="1">Gym equipment</option>
+           <option value="1">Gym wears</option>
+           <option value="1">Creatines</option>
+           <option value="1">whey-Proteins</option>
+           <option value="1">Men</option>
+           <option value="1">Women</option>
+        </select><br><br>
+       
+        <input type="text" placeholder="Equipments-Price" ><br><br>
+        <input type="text" placeholder="Customer-Name"><br><br>
+        
+        <label for="quantity">QUANTITY</label>
+                   
+                        <select class="quanity">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                            <option value="1">6</option>
+                            <option value="1">7</option>
+                            <option value="1">8</option>
+                            <option value="1">9</option>
+                            <option value="1">10</option>
+                            
+                            
+                        </select>
+                   <br><br>
+                   <img src="{% static 'images/puma.png'%} ">
+                   <img src="{% static 'images/lifefitness.png'%}">
+       
+    
+  <button type="button">Submit</button></span> 
+</form>    
+
+</div>
+</body> 

@@ -1,0 +1,199 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <style>
+        html{
+           background-image: url"{% static 'images/confidential.jpg' %}";
+           background-size: 3000px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border-top: 30px solid aqua;
+          
+        }
+        div.paymentmethods{
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            
+
+        }
+        div.cards{
+            border: 3px solid silver;
+            border-radius: 30px;
+            padding: 30px;
+            padding-right: 20px;
+        }
+        div.cards:hover{
+            border: 3px solid aqua;
+        }
+        
+        div.payment{
+            background: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         display: flex;
+            align-items: center;
+            background-color: beige;
+            border: 3px solid black;
+            width: 80%;
+            padding: 30px;
+            margin: 50px;
+            border-radius:10px;
+            position: static;
+        }
+        #card1{
+            padding-left: 40px;
+        }
+        img{
+            border-radius: 50%;
+        }
+        img:hover{
+            border: radius 50%;
+            border: 3px solid gold;
+        }
+        DIV.phonepe{
+            align-items: center;
+            display: inline-block;
+           margin-right: 30px;
+            align-content: center;
+            padding-top: 70px;
+        }
+        
+        label{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 10px;
+        }
+        input{
+            border-radius: 30px;
+        }
+        #upi{
+            padding-left: 10px;
+            padding-top: 30px;
+        }
+        div.upi{
+            border: 3px solid silver;
+            padding-left: 30px;
+            margin-left: 40px;
+            display: flex;
+            border-radius: 30px;
+        }
+        div.upi:hover{
+            border: 3px solid aqua;
+        }
+        div.gpay{
+            padding-top: 120px;
+            margin-left: 0;
+        }
+        div.paytm{
+            padding-top: 100px;
+            margin-left: 20px;
+            margin: 20px;
+        }
+        div.cod{
+            border: 3px solid silver;
+            padding: 30px;
+            margin-left: 30px;
+            border-radius: 20px;
+        }
+        div.cod:hover{
+                border: 3px solid aqua;
+        }
+        mark{
+            border-radius: 20px;
+        }
+        div.color1{
+            background-color: aquamarine;
+            width: 70%;
+            border-top: 30px solid aquamarine;
+            margin-top: 0;
+            float: right;
+            margin-right: 0;
+        }
+        div.color2{
+            border-top: 30px solid burlywood;
+            width: 50%;
+            float: right;
+        }
+        div.color3{
+            border-top: 30px solid gold;
+            width: 20%;
+            float: right;
+        }
+        div.color4{
+            border-top: red;
+            width: 25%;
+            float: right;
+        }
+        div.payment:hover{
+            scale: 1.1;
+            transition: all 0.9s;
+        }
+    </style>
+    <head>
+        <div class="color1">
+                
+        </div><br><br>
+        <div class="color2">
+
+        </div><br><br>
+        <div class="color3">
+
+        </div><br><br>
+        <div class="color4">
+
+        </div>
+            <img src="{% static 'images/razorpay.webp' % }" width="200px" height="200px">
+    <div class="paymentmethods">
+        <h2>Choose Your Payment Method</h2>
+    </div>
+        </head>
+    <body>
+        <div class="payment">
+            
+                <div class="cards">
+            <label for=""><mark>Credit and Debit Cards</mark></label><br><br>
+           <span id="card1"> <a href="Credit and Debit Cards.html">
+            <input type="button" value="credit-card"></span><br><br>
+           <span id="card1"><input type="button" value="Debit-Card"></span><br>
+        <br>
+           </A>
+        </div>
+        <div class="upi">
+         <DIV class="phonepe">
+            <span style="padding-top: 20px;"><label for=""><mark>UPI-APPS</mark></label></span><br><br>
+                <a href="finalorderpage.html" >
+                <img src="{% static 'images/phonepe.jpg' %}" width="80px" height="80px" >
+            </a>
+            </DIV><br><br>
+            <div class="gpay">
+                <a href="finalorderpage.html" >
+                    <img src="{% static 'images/gpay.png' %}" width="80px" height="80px">
+                </a>
+            </div><br><br>
+            <div class="paytm">
+                <a href="finalorderpage.html" >
+                    <img src="{ % static 'images/paytm.jpg' %}" width="80px" height="80px">
+                </a>
+            </div>
+            
+        </div>
+        <div class="cod">
+            <label for="cod"><mark>Pay-On-Delivery</mark></label><br><br>
+           <span style="padding-left: 30px;"> <input type="button" value="continue" onclick="alertorder()"></span>
+
+        </div>
+        <script>
+            function alertorder(){
+                alert("Your Order Has been Successfully Placed!!");
+            }
+        </script>
+           
+           
+        
+       
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                margin-right: 30px;
+            }
+        </style>
+        <script>
+            
+                    var num1;
+                    var num2;
+            function add(){
+                var result=num1+num2;
+                return(result)
+            }
+            function sub(){
+                var result=num1-num2;
+                return(result)
+            }
+            function multiplication(){
+                var result=num1*num2;
+                return(result)
+            }
+            function division(){
+                var result=num1/num2;
+                if(num2==0){
+                    return("undefined data");
+                }
+                return(result);
+            }
+        </script>
+<body>
+    <form>
+        <input id="calc" type="text" name="answer"><br><br>
+        <input type="button" name="7" value="7" onclick="form.answer.value+=7">
+        <input type="button" name="7" value="8" onclick="form.answer.value+=8">
+        <input type="button" name="7" value="9" onclick="form.answer.value+=9">
+        <input type="button" name="7" value="+" onclick="form.answer.value+='+'">
+    <br>
+    <input type="button" name="7" value="4" onclick="form.answer.value+=4">
+    <input type="button" name="7" value="5" onclick="form.answer.value+=5">
+    <input type="button" name="7" value="6" onclick="form.answer.value+=6">
+    <input type="button" name="7" value="-" onclick="form.answer.value+='-'">
+    <br>
+    <input type="button" name="7" value="1" onclick="form.answer.value+=1">
+    <input type="button" name="7" value="2" onclick="form.answer.value+=2">
+    <input type="button" name="7" value="3" onclick="form.answer.value+=3">
+    <input type="button" name="7" value="*" onclick="form.answer.value+='*'">
+    <br>
+    <input type="button" name="7" value="/" onclick="form.answer.value+='/'">
+    <input type="button" name="7" value="0" onclick="form.answer.value+=0">
+    <input type="button" name="7" value="." onclick="form.answer.value+='.'">
+    <input type="button" name="7" value="=" onclick="form.answer.value+='='">
+    </form>
+</body>    
+</head>
+
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function BMI(){
+var height=document.getElementById("height");
+var weight=document.getElementById("weight");
+var result=height/weight;
+   if(result<=18.5){
+    var val="underweight";
+
+   }
+   else if(18.5>result && result<=25){
+    var val="normal weight";
+   }
+   else if(25>result&& result<=29){
+    var val="over-weight";
+   }
+   else if(30>=result&& result<=35){
+    var val="obese";
+   }
+   else if(result>35){
+    var val="severe obesity";
+   }
+            }
+    function print()
+    {
+        BMI();
+        document.writeln(window.val);
+    }
+        </script>
+<h2> your weight in kg</h2>
+<input id="weight" type="text" name="weight" placeholder="your weight">
+<h2>Your height in cm</h2>
+<input id="height" type="text" name="height" placeholder="your height">
+<input type="button"  value="calculate" onlick="print()">    
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+    <script>
+        function bmi(){
+            alert("this page contains adult content");
+        }
+
+       
+    </script>
+    <body>
+        <input type="button" value="promote" onclick="bmi()">
+    </body>
+</html>
+<script>
+     var a=[1,2,3,4,5,6,7,8,9];
+        a.sort();
+        writeln(numbers);
+        var B="LAVANYA";
+        Document.write(B.charat(3));
+</script>
+<!DOCTYPE html>
+<html>
+    <script>
+        var array=[1,2,3,4,5,6,7,8,9,10,20];
+        function reverese(){
+            for(i=array.length;i>0;i--)
+            {
+                document.write(array[i]+"<br>");
+            }
+        }
+        reverese();
+    </script>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+    <span id="t1">Current Time:-</span>
+</head>
+<script>
+
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    var mm=today.getMilliseconds();
+    document.getElementById('t1').innerHTML=h+":"+m+":"+s+":"+mm;
+
+   
+
+</script>
+</html>

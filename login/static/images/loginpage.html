@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html{
+            background-color: black;
+            background-image: url(GYM12.jpg);
+           
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.9;
+            filter: grayscale(70%);
+            border: 4px solid beige;
+            border-radius: 30px;
+            margin: 0;
+            margin-top: 0;
+            padding: 10px; 
+            }
+        div.header{
+            color:gold;
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bolder;
+            filter: contrast(200%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+        div.navbar{
+            background-color: black;
+            float: right;
+            display: block;
+            }
+        img{
+            display: flex;
+            border-radius: 50px;
+            }
+        div.navbar img :hover{
+            border: 3px solid yellow;
+            border-radius: 50%;
+                }
+
+        div.Blank{
+            color: black;
+        }
+    #k1{
+        color:antiquewhite;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+    }
+    #k2{
+        color:black;
+        font-size: 15px;
+        font-style: oblique;
+        padding-left: 100px;
+    }
+    div.quotes{
+        background-color: beige;
+        background-image: url(gym.webp);
+        color:red;
+        width: 30%;
+        padding: 30px;
+        border-radius: 20px;
+        margin-left: 250px;
+    }
+    DIV.login{
+      border-radius: 15px;
+        width: 10%;
+        padding-left: 160px;
+        margin-left: 250px;
+        color: red;
+    }
+    span.NATION{
+        font-style: oblique;
+    }
+    input{
+        color: black;
+        background-color: yellow;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    div.gymslot{
+        color: aliceblue;
+        font-size: 15PX;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        animation: move-words 20s linear infinite;
+        margin: 0;
+        border-radius: 20px;
+        padding: 10px;
+        width: max-content;
+    }
+    @keyframes move-words {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+    }
+   #k3{
+    color:beige;
+    font-size: 29px;
+   }
+
+       
+    </style>
+     <script>
+        $(function() {
+    $("#links > a").click(function(e) {
+        e.preventDefault(); 
+
+        $("#content").load(this.href, function() {
+            
+        });
+    });
+});
+     </script>
+    <head>
+        <div class="navbar">
+            <img src="three bars.png" width="50px" height="50px">
+
+        </div>
+        <div class="header">
+          
+            
+           <h1><span class="k1">MUSCLE </span><span class="NATION">NATION</span></h1>
+          
+        </div>
+        
+        <div class="gymslot">
+             NEW YEAR OFFER CLOSES SOON!! . BOOK YOUR SLOT ON ONLY FOR <span id="k3"> Rs.8999</span> ANNUALLY!  
+         </div><br><br>
+    </head>
+    <body>
+        <div class="quotes">
+        <span id="k1">THE PAIN YOU FEEL TODAY WILL BE THE<br> STRENGTH YOU FEEL TOMORROW.</span> <br><br>
+         <span id="k2"><mark>-RITU GHATOUREY.</mark></span>
+        </div><br>
+        <div class="login">
+            <div id="links">
+                 <a href="First page.html">
+                    <input type="button" value="SIGN-IN">
+                 </a></span>
+            </div>
+            <div id="content"></div>
+            <a href="login.html" >
+                <input type="button" value="LOG-IN">
+            </a>
+            <a href="First page.html">
+            </a>
+
+        </div>
+        
+        
+    </body>
+    
+     
+    
+</html>

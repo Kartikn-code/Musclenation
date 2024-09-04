@@ -1,0 +1,124 @@
+{%load static%}
+<!DOCTYPE html>
+<head>
+    <style>
+        html{
+            background-image: url("{% static 'images/GYM12.jpg'%}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: beige;
+            border: 4px solid orangered;
+            border-radius: 30px;
+            margin: 10px;
+            box-shadow: 0 10 10 orangered;
+            background-attachment: fixed;
+        }
+        div.m1{
+          
+            
+            padding: 20px;
+            box-shadow: 2px 2px 2px solid gold;
+            font-style: oblique;
+            font-family: inherit;
+        }
+        div.table{
+            border: 3px solid orange;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding-left: 150px;
+           margin-left: 20px;
+            margin-right: 400px;
+            box-shadow: 6px 6px 6px silver orangered;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            scale: .05;
+            transition: all 3s;
+            rotate: 0deg;
+            background-image: url("{%static 'images/gym15.jpg'%}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 30px;
+            font-size: 20px;
+        }
+         div.table,input{
+            border-radius: 20px solid green;
+          
+        }
+          
+     
+        div.signup{
+            box-sizing: border-box;
+            padding: 1cm;
+            text-align: center;
+            color: beige;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            scale: .05;
+            
+
+        }
+       
+        
+        div.table:hover{
+            scale: 1.05;
+                
+            
+        }
+        div.table input{
+            border-radius: 20px solid aqua;
+        }
+        label{
+            color: white;
+        }
+        a{
+
+            color: antiquewhite;
+            font-size: 25px;
+        }
+        button{
+            border-radius: 10px;
+            box-shadow: 10 10 10 solid orangered;
+            margin-left:50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <br><br>
+    <DIV class="m1">
+   <img src="{% static 'images/mn.png'%}"> <title>MUSCLE NATION</title>
+</DIV><br><br>
+</head>
+
+<body>
+    <div class="table">
+<form action="{% url 'userlogin' %}" method="post">
+    {% csrf_token %}
+    <label>User-Name</label><br><br>
+    <input type="text" name="username" placeholder="User-name"><br><br>
+    <label>Pass-Word</label><br><br>
+    <input type="password" name="password" placeholder="Pass-Word" maxlength="10"> <br><br>
+    <button>Submit</button><br>
+    <span style="color: antiquewhite;font-size: 20px;"><a href="{% url 'loginpage'%}" target="_blank"> Forgot Password</a></span>
+  <link rel="icon" href="muscle nation.jpg"width="100px" height="100px">
+    //  <favicon> <img src="muscle nation.jpg" width="100px" height="100px"></favicon>
+</form>
+
+</div>
+<div class="signup">
+New-User   <a href="{% url 'loginpage' %}">Register Here</a>
+</div>
+
+<div class="box">
+  <span style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding: 40px;margin-top: 220px;">MUSCLE-NATION</span>
+</div>
+
+</body>
