@@ -3,6 +3,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-color: black;
+            font-family: "Montserrat", sans-serif;
+        }
+        body{
+            font-family: "Montserrat", sans-serif;
         }
         
         
@@ -11,7 +15,7 @@
             color: white;
             background-color: black;
             text-align: right;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
             padding-right: 20px;
         }
         a{
@@ -40,20 +44,15 @@
         }
         div.header{
         
-       background-image: url"{% static 'images/bull5.avif'%}";
-       
+        background-image: url"{% static 'images/bull5.avif'%}";
         background-color: orange;
         opacity: 0.9;
-        
-       
-      
-    
         margin-top: 0;
         padding: 20px;
-       border: 3px solid black;
+        border: 3px solid black;
         width: 100%;
         height: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight:bolder ;
         text-align: center;
         font-style: oblique;
@@ -95,8 +94,7 @@
             padding-left: 50px;
             color:black;
            
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+            font-family: "Montserrat", sans-serif;        }
         span.quan{
            
             color:lime;

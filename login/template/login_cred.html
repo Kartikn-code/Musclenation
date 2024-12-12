@@ -1,79 +1,81 @@
 {%load static%}
 <!DOCTYPE html>
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         html{
             background-image: url("{% static 'images/GYM12.jpg'%}");
             background-size: cover;
             background-repeat: no-repeat;
             background-color: beige;
-            border: 4px solid orangered;
             border-radius: 30px;
             margin: 10px;
-            box-shadow: 0 10 10 orangered;
+            height: 100%;
+            box-shadow: 0 10px 10px orangered;
             background-attachment: fixed;
         }
         div.m1{
           
             
             padding: 20px;
-            box-shadow: 2px 2px 2px solid gold;
+            box-shadow: 0px 20px 20px solid gold;
             font-style: oblique;
             font-family: inherit;
         }
+        /* login table */
         div.table{
-            border: 3px solid orange;
             border-radius: 20px;
             padding: 20px;
             width: 300px;
             height: 300px;
             margin: 10px;
             padding-left: 150px;
-           margin-left: 20px;
+            justify-content: center;
+            margin-left: 100px;
             margin-right: 400px;
-            box-shadow: 6px 6px 6px silver orangered;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            scale: .05;
+            
+            font-family: "Montserrat", sans-serif;
+            scale: 0.9;
             transition: all 3s;
-            rotate: 0deg;
+           opacity: 0.9;
             background-image: url("{%static 'images/gym15.jpg'%}");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             border-radius: 30px;
             font-size: 20px;
+            
+            scale: 0.9;
         }
-         div.table,input{
+        .table:hover{
+            scale: 1;
+            transition: all 0.5s ease;
+            box-shadow: 6px 6px 6px silver ;        
+        }
+        
+            div.table,input{
             border-radius: 20px solid green;
           
         }
           
-     
+     /* signup */
         div.signup{
             box-sizing: border-box;
-            padding: 1cm;
-            text-align: center;
             color: beige;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: "Montserrat", sans-serif;            
             font-size: 30px;
+            margin-left: 180px;
         }
-        .box{
-            width: 200px;
-            height: 200px;
-            background-color: orangered;
-            border: 2px solid yellowgreen;
-            border-radius: 10px;
-            scale: .05;
-            
+        .signup a{
+            margin-left: 10px;        }
+      
 
+        
+        .m1 img{
+            margin-left: 130px;
         }
        
-        
-        div.table:hover{
-            scale: 1.05;
-                
-            
-        }
+      
         div.table input{
             border-radius: 20px solid aqua;
         }
@@ -94,7 +96,7 @@
     </style>
     <br><br>
     <DIV class="m1">
-   <img src="{% static 'images/mn.png'%}"> <title>MUSCLE NATION</title>
+   <img src="{% static 'images/mn.png'%}" width="350px" height="100px"> <title>MUSCLE NATION</title>
 </DIV><br><br>
 </head>
 
@@ -108,17 +110,15 @@
     <input type="password" name="password" placeholder="Pass-Word" maxlength="10"> <br><br>
     <button>Submit</button><br>
     <span style="color: antiquewhite;font-size: 20px;"><a href="{% url 'loginpage'%}" target="_blank"> Forgot Password</a></span>
-  <link rel="icon" href="muscle nation.jpg"width="100px" height="100px">
-    //  <favicon> <img src="muscle nation.jpg" width="100px" height="100px"></favicon>
+  <link rel="x-icon" href="muscle nation.jpg"width="100px" height="100px">
+    
 </form>
 
 </div>
 <div class="signup">
-New-User   <a href="{% url 'loginpage' %}">Register Here</a>
+    New-User<a href="{% url 'loginpage' %}">Register Here</a>
 </div>
 
-<div class="box">
-  <span style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding: 40px;margin-top: 220px;">MUSCLE-NATION</span>
-</div>
+
 
 </body>

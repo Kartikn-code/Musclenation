@@ -3,80 +3,97 @@
 <!DOCTYPE html>
     <html>
     <head>
-        <link rel="stylesheet" href="{% static 'css/gym.css'%}" type="text/css">
-        <div></div>
-        <div class="header">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .BMI{
+                border-radius: 20px;
+                width: 50%;
+                justify-content: center;
+                text-align: center;
+                height: auto;
+                padding: auto;
+                
+                border: 2px solid #d3b4ae;
+                margin-top: 200px;
+                backdrop-filter: blur(300px);
+                
+            }
+            body{
+                font-family: "Montserrat", sans-serif;
+            }
            
-            <img src="{% static 'images/bull logo 2.jpg'%}" width="145px" height="145px">
-           <h1><span class="k1">MUSCLE </span><span class="NATION">NATION</span></h1>
-          
-        </div>
-        <br>
-        <div class="caption">
-        EAT  <span class="S02">SLEEP  </span> <span class="gym">GYM</span><span class="S02"> REPEAT!</span><br>
-    </div>    
-        <div class="dropdown">
-        <ul>
-           <a><li>Men</li></a>
-            <a><li>Women</li></a>
-            <a><li>Free online  Suggestions</li></a>
-            
-            <a><li>Gym equipments</li></a>
-            <a><li>Gym wears</li></a>
-        </ul>
+            .loginpage{
+                background-image: url("{% static 'images/GYM12.jpg'%}");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 1000px;
+            }
+            .navbar {
+                display: flex;
+                list-style-type: none;
+                gap: 10px;
+                background: transparent;
+                backdrop-filter: blur(30px);
+                width: 1200px;
+                background: black;
+                    
 
-    </div>
-        <div class="need">
-        <h3> If you haven't started going to the gym yet,<br>
-         Now is the <SPAN class="K2">Perfect</SPAN> time to start.</h3>
-        </div>
-         <body>
+            }
+            .navbar a{
+                text-decoration: none;
+                color: white;
+                gap: 20px;
+                padding: 10px;
+
+            }
+            .links{
+                margin-left: 300px;
+            }
+        </style>
+       
+     
         <script>
-            confirm("Are u above 18 years old!!")
+        confirm("Are u willing to share ur imformation with us ?")
         </script>
+        <div class="navbar">
+           <div class="links">
+            <a href="">Home</a>
+            <a href="{% url 'Products' %}">Products</a>
+            <a href="">Login</a>
+            <a href="">Cart</a>
+            
+           </div>
+           
+        </div>
         
-
-<div class="BMI">
+<section class="loginpage"><br>
+    <div class="BMI">
         <form action="{% url 'registeration' %} " method="post">
             {% csrf_token %}
             <b>
-            <label for="name">Name</label><br>
-            <input type="text" name="username" placeholder="Your-name"><br><br>
-            <label for="name">Password</label><br>
-            <input type="password" name="password" placeholder="password"><br><br>
-           <!----<label for="age">Age</label><br>
-            <input type="number"name="age" placeholder="Your Age"><br><BR>
-            <label for="height">Height</label><br>
-            <input type="number"name="height" placeholder="Your Height in CM"><br><br>
-            <label for="Weight">Weight</label><br>
-            <input type="number"name="Weight" placeholder="Your Weight in KG"><br><br>
-            <br>-->
+                <div class="name">
+                    <label for="name">First Name</label><br>
+            <input type="text" name="username" placeholder="FirstName"><br><br>
+            <label for="name">Last Name</label><br>
+            <input type="text" name="username" placeholder="Lastname"><br><br>
+                </div>
+            
+            <label for="name">E-mail</label><br>
+            <input type="email" name="password" placeholder="good2see@gmail.com"><br><br>
+        
             <SPAN class="k3"><input type="submit" name="submit" value="Proceed"></SPAN>
             
         </b>
         </form>
     
     </div><br>
+</section>
+    <section class="info">
     <div class="Blank"><br><br><br><br><br>
 
-        <div class="navbar">
-           
-            <a href="home"><li> HOME</li></a>
-            <a href="aboutus.html"><li> ABOUT US</li></a>
-            <a href="contact us"><li> CONTACT US</li></a>
-            <a href="promotions"><li> PROMOTIONS</li></a>
-            <div id="links">
-                <a href="PRODUCTS.HTML">
-                    <li> PRODUCTS</li>
-                </a></span>
-           </div>
-           <div id="content"></div>
-            <a href="PRODUCTS.HTML"></a>
-            <a href="PRODUCTS.HTML"><li> TRAINERS</li></a>
-            <a href="PRODUCTS.HTML"><li> BRANCHES</li></a>
-            <a href="PRODUCTS.HTML"><li> WORK-OUTS</li></a>
-            <a href="Diet-plan.html"><li> DIET-PLANS</li></a>
-        </div>
+        
         
     <div class="address">
         COPYRIGHTS RECEIVED-@-2017
@@ -90,7 +107,7 @@
                    
        
     </div>
-    
+</section>
 
     </body>
       
