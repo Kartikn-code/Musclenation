@@ -33,6 +33,11 @@ class CustomerDetails(models.Model):
     def __str__(self)->str:
         return f'{self.CName} {self.Cid} {self.Cage} {self.CmailId}'
 
+class payment(models.Model):
+    Name=models.CharField(max_length=100)
+    MOP=models.CharField(max_length=20)
+    Status=models.CharField(max_length=20)
+    
 
 
 

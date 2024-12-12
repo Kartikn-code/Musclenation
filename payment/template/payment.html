@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
     <style>
@@ -39,7 +40,8 @@
             width: 80%;
             padding: 30px;
             margin: 50px;
-            border-radius: 50px;
+            border-radius:10px;
+            position: static;
         }
         #card1{
             padding-left: 40px;
@@ -126,6 +128,10 @@
             width: 25%;
             float: right;
         }
+        div.payment:hover{
+            scale: 1.1;
+            transition: all 0.9s;
+        }
     </style>
     <head>
         <div class="color1">
@@ -140,7 +146,7 @@
         <div class="color4">
 
         </div>
-            <img src="razorpay.webp" width="200px" height="200px">
+            <img src="{% static 'images/razorpay.webp' % }" width="200px" height="200px">
     <div class="paymentmethods">
         <h2>Choose Your Payment Method</h2>
     </div>
@@ -160,17 +166,17 @@
          <DIV class="phonepe">
             <span style="padding-top: 20px;"><label for=""><mark>UPI-APPS</mark></label></span><br><br>
                 <a href="finalorderpage.html" >
-                <img src="phonepe.jpg" width="80px" height="80px" >
+                <img src="{% static 'images/phonepe.jpg' %}" width="80px" height="80px" >
             </a>
             </DIV><br><br>
             <div class="gpay">
                 <a href="finalorderpage.html" >
-                    <img src="gpay.png" width="80px" height="80px">
+                    <img src="{% static 'images/gpay.png' %}" width="80px" height="80px">
                 </a>
             </div><br><br>
             <div class="paytm">
                 <a href="finalorderpage.html" >
-                    <img src="paytm.jpg" width="80px" height="80px">
+                    <img src="{ % static 'images/paytm.jpg' %}" width="80px" height="80px">
                 </a>
             </div>
             

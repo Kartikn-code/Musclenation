@@ -102,6 +102,10 @@ def customersearch(request):
          print(cust)
     return render (request,"form.html",{'custname': cust}) 
 def payment(request):
+     MOP=request.GET.get("MOP")
+     if(MOP == "cash"):
+          print("Your Payment is Done Sucessfully")
+
      return render(request,"payment.html")
 def finalorder(request):
      return render(request,'orderconfirmation.html')
