@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Credentials(models.Model):
     Username=models.CharField(max_length=20)
@@ -37,6 +38,16 @@ class payment(models.Model):
     Name=models.CharField(max_length=100)
     MOP=models.CharField(max_length=20)
     Status=models.CharField(max_length=20)
+
+
+
+class Upload(models.Model):
+    file = models.FileField(upload_to='uploads/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.file.name
+
     
 
 

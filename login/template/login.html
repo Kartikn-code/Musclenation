@@ -140,7 +140,12 @@
         div.main1{
             padding-top: 100px;
         }
-        
+        .Services{
+            background-color: white;
+           width: 1200px;
+           height: 400px;
+
+        }
        
 
     </style>
@@ -165,6 +170,11 @@
         <div class="toppage">
         <div class="header">
         <span id="k2"><IMG src="{% static 'images/muscle nation.jpg' %}" width="100px" height="100px"></span>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+              </script>
        
     <div class="navbar">
             <ul>
@@ -197,12 +207,19 @@
             </div><br><br>
            
 
+<section class="Services " data-aos="fade-up">
+<div class="container">
 
+    <div class="post">
+    <img src="{% static 'images/service1.jpeg' %}" style ="border-radius: 20px;"width="500px" height="400px">
+    </div>
+</div>
+</section>
 
 <div class="Blank">
     <br><br><br>
-    
-<div class="address">
+  <section class="address" data-aos="fade-right"> 
+<div class="address" >
     COPYRIGHTS RECEIVED-<br><img src="{%static 'images/at.png' %}" width="30px" height="30px"><br>2017
    <br>#22, COOPERATIVE NAGAR,CHENNAI-600077
 <BR>
@@ -214,6 +231,7 @@
             
 </div>
 </div>
+</section> 
 
     </body>
 </html>

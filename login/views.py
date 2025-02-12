@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from .forms import *
 from django.contrib import messages
+from .forms import UploadForm
+from django.conf import settings
+import os
 
 # Create your views here.
 def login_custom(request):
@@ -109,6 +112,25 @@ def payment(request):
      return render(request,"payment.html")
 def finalorder(request):
      return render(request,'orderconfirmation.html')
+
+
+def file_upload(request):
+    if request.method == 'POST':
+        form = UploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            uploaded_file = request.FILES['file']
+            save_path = os.path.join(settings.MEDIA_ROOT, 'uploads', uploaded_file.name)
+            with open(save_path, 'wb+') as destination:
+                for chunk in uploaded_file.chunks():
+                    destination.write(chunk)
+            return redirect('upload_success')
+    else:
+        form = UploadForm()
+    return render(request, 'uploader/upload.html', {'form': form})
+
+def upload_success(request):
+    return render(request, 'uploader/success.html')
+
          
 
 
