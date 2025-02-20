@@ -9,8 +9,7 @@ methods : various types:
 		POST (request-> is always we want presist or save or insert a data or submit)
 		GET (request-> is used to fetch or retrieve the info)
 		PUT (request-> only to update or edit data/ record/ value ) this is also called as idempotent:->
-for any number of request there wont be change of data or inserti
-on of new data/recore
+for any number of request there wont be change of data or insertion of new data/recore
 		DELETE (request-> to remove/delete a data/record)
 PATCH, and so on
 
