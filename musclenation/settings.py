@@ -31,6 +31,10 @@ SECRET_KEY = 'django-insecure-u8+584!uz_kgb*5kbrvezq=ao(q6+phw&v$lv$gd^6lo6+kze7
 DEBUG = True
 
 ALLOWED_HOSTS = ['musclenation.onrender.com','127.0.0.1','0.0.0.0','10000']
+import os
+
+PORT = os.environ.get('PORT', 8000)  # Defaults to 8000 if PORT is not set
+
 
 
 
