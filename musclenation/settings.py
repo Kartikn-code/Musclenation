@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-u8+584!uz_kgb*5kbrvezq=ao(q6+phw&v$lv$gd^6lo6+kze7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['musclenation.onrender.com','127.0.0.1']
+ALLOWED_HOSTS = ['musclenation.onrender.com','127.0.0.1','0.0.0.0']
 
 
 # Application definition
